@@ -1,17 +1,13 @@
 var points = [];
-var speed = 3;
-var arrow;
-var center;
-var angle;
+var speed = 3; // the speed the drawn line moves across the screen
+var angle = 0;
 var diameter = 100;
-var direction;
 var oscillate = false;
 function setup() {
 	createCanvas(1310, 400);
 	arrow = createVector();
 	center = createVector(100,height/2);
 	direction = createVector(100,0);
-	angle = 0;
 }
 
 function draw() {
